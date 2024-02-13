@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function PowerBI() {
+function PowerBI({ reference }) {
   return (
-    <div>PowerBI</div>
-  )
+    <section id="power_bi" className="power_bi active" ref={reference}>
+      <h1>Power BI</h1>
+    </section>
+  );
 }
 
 export default PowerBI;

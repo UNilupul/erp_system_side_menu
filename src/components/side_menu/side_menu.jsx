@@ -10,9 +10,19 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 import SideMenuSystems from "./side_menu_systems/side_menu_systems";
 import SystemList from "../../data/side_menu_data";
 
-function SideMenu() {
+function SideMenu({ systemActive }) {
   const [collapse, setCollapse] = useState(false);
   const [sideMenuSystems, setSideMenuSystems] = useState(SystemList);
+
+  // const handleSystemOnClick = (id, target) => {
+  //   const newSystemData = sideMenuSystems.map((menu) => {
+  //     menu.active = false;
+  //     if (menu._id === id) menu.active = true;
+  //     return menu;
+  //   });
+  //   setSideMenuSystems(newSystemData);
+  //   systemActive(target);
+  // };
 
   useEffect(() => {
     if (collapse) {
@@ -59,6 +69,7 @@ function SideMenu() {
                   setCollapse(false);
                 }
               }}
+              // menuOnClick={handleSystemOnClick}
             />
           ))}
         </ul>

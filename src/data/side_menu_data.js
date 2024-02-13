@@ -6,6 +6,7 @@ const sytemsList = [
     {
         _id: 1,
         name: "Power BI - Dashboards",
+        target: "power_bi",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: true,
@@ -13,27 +14,82 @@ const sytemsList = [
             {
                 _id: 1.1,
                 name: "Cash flow forecast",
+                target: "cash_flow_forecast",
+                url: "",
                 active: true,
             },
             {
                 _id: 1.2,
-                name: "Ageing vs revenue analysis",
+                name: "Account receivable ageing",
+                target: "account_receivable_ageing",
+                url: "",
                 active: false,
             },
             {
                 _id: 1.3,
+                name: "Service ticket/token overview",
+                target: "service_ticket",
+                url: "",
+                active: false,
+            },
+            {
+                _id: 1.4,
                 name: "Purchase quotations",
+                target: "purchase_quotations",
+                url: "",
+                active: false,
+            },
+        ]
+    },
+    {
+        _id: 2,
+        name: "Finace Management",
+        target: "finance_management",
+        icon: <MdAttachMoney />,
+        expandIcon: <IoIosArrowDown />,
+        active: false,
+        features: [
+            {
+                _id: 2.1,
+                name: "General ledger integration",
+                target: "general_ledger",
+                url: "",
+                active: true,
+            },
+            {
+                _id: 2.2,
+                name: "Cash flow management",
+                target: "purchase_quotations",
+                url: "",
+                active: false,
+            },
+            {
+                _id: 2.3,
+                name: "Profitability tracking",
+                target: "purchase_quotations",
+                url: "",
+                active: false,
+            },
+            {
+                _id: 2.4,
+                name: "Asset Inventory",
+                target: "purchase_quotations",
+                url: "",
                 expandIcon: <IoIosArrowDown />,
                 active: false,
                 subFeatures: [
                     {
-                        _id: 1.3_1,
-                        name: "Asset Inventory",
+                        _id: 2.4_1,
+                        name: "Asset inventory management",
+                        target: "purchase_quotations",
+                        url: "",
                         active: false,
                     },
                     {
-                        _id: 1.3_2,
-                        name: "Asset Inventory2",
+                        _id: 2.4_2,
+                        name: "Maintenance and repairs",
+                        target: "purchase_quotations",
+                        url: "",
                         active: false,
                     },
                 ]
@@ -41,32 +97,10 @@ const sytemsList = [
         ]
     },
     {
-        _id: 2,
-        name: "Finace Management",
-        icon: <MdAttachMoney />,
-        expandIcon: <IoIosArrowDown />,
-        active: false,
-        features: [
-            {
-                _id: 2.1,
-                name: "Cash flow forecast",
-                active: true,
-            },
-            {
-                _id: 2.2,
-                name: "Ageing vs revenue analysis",
-                active: false,
-            },
-            {
-                _id: 2.3,
-                name: "Purchase quotations",
-                active: false,
-            },
-        ]
-    },
-    {
         _id: 3,
         name: "HRIS",
+        target: "purchase_quotations",
+        url: "",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: false,
@@ -74,6 +108,8 @@ const sytemsList = [
     {
         _id: 4,
         name: "Production Planning System",
+        target: "purchase_quotations",
+        url: "",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: false,
