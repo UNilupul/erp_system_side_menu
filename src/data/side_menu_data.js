@@ -18,14 +18,14 @@ const sytemsList = [
             {
                 _id: 1.2,
                 name: "Ageing vs revenue analysis",
-                active: true,
+                active: false,
             },
             {
                 _id: 1.3,
                 name: "Purchase quotations",
                 icon: <RxPerson />,
                 expandIcon: <IoIosArrowDown />,
-                active: true,
+                active: false,
             },
         ]
     },

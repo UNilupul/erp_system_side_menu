@@ -54,6 +54,11 @@
     color: var(--blue_01);
     transition: 0.3s ease-in;
 }
+.side_menu-systems {
+    margin: 50px 0 0 0;
+    width: 404px;
+    transition: 0.3s ease-in;
+}
 
 
 
@@ -83,4 +88,8 @@
     overflow: hidden;
     /* display: none; */
     margin: 30px;
+}
+.side_menu.collapse .side_menu-systems {
+    width: 83px;
+    margin-top: 68px;
 }

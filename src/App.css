@@ -3,7 +3,7 @@
   /* colors */
 
   --background: #EDF7F6;
-  
+
   --blue_01: #164863;
   --blue_02: #427D9D;
   --blue_03: #9BBEC8;
@@ -27,4 +27,14 @@
   --title: 16px;
   --normal: 13px;
   --subTitle: 14px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
 }
