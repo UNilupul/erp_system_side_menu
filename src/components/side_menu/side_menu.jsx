@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./side_menu.css";
 
@@ -13,6 +13,16 @@ import SystemList from "../../data/side_menu_data";
 function SideMenu() {
   const [collapse, setCollapse] = useState(false);
   const [sideMenuSystems, setSideMenuSystems] = useState(SystemList);
+
+  useEffect(() => {
+    if (collapse) {
+      document
+        .querySelectorAll(".side_menu_systems-system-features")
+        .forEach((el) => {
+          el.classList.remove("expand");
+        });
+    }
+  }, [collapse]);
 
   return (
     <div className={`side_menu ${collapse ? "collapse" : undefined}`}>
@@ -41,7 +51,15 @@ function SideMenu() {
       <div className="side_menu-systems">
         <ul>
           {sideMenuSystems.map((item) => (
-            <SideMenuSystems key={item._id} item={item} />
+            <SideMenuSystems
+              key={item._id}
+              item={item}
+              onClick={() => {
+                if (collapse) {
+                  setCollapse(false);
+                }
+              }}
+            />
           ))}
         </ul>
       </div>

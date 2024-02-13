@@ -1,0 +1,12 @@
+.side_menu_system_sub_features {
+    /* margin-left: 20px; */
+}
+.side_menu_system_sub_features li {
+    list-style: none;
+}
+.side_menu_system_sub_features-details {
+    padding: 7px 30px 7px 20px;
+    margin-bottom: 10px;
+    color: var(--inactiveColor);
+    /* background-color: aquamarine; */
+}

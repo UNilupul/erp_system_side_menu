@@ -5,14 +5,13 @@ import "./side_menu_systems.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import SideMenuSystemFeatures from "../side_menu_system_features/side_menu_system_features";
 
-function SideMenuSystems({ item }) {
-
-    const [expand, setExpand] = useState(false);
+function SideMenuSystems({ item, onClick }) {
+  const [expand, setExpand] = useState(false);
 
   return (
     <div className="side_menu_systems">
       <div className="side_menu_systems-system">
-        <li>
+        <li onClick={onClick}>
           <a href="#" onClick={() => setExpand(!expand)}>
             <div className="side_menu_systems-system-details">
               <div className="side_menu_systems-system-details-nameIcon">
@@ -29,11 +28,19 @@ function SideMenuSystems({ item }) {
             </div>
           </a>
 
-          <ul className={`side_menu_systems-system-features ${expand ? "expand" : undefined}`}>
-            <div className="side_menu_systems-system-features-feature"> 
-              {item.features && item.features.map( (features) => (
-                <SideMenuSystemFeatures key={features._id} features={features}/>
-              ))}
+          <ul
+            className={`side_menu_systems-system-features ${
+              expand ? "expand" : undefined
+            }`}
+          >
+            <div className="side_menu_systems-system-features-feature">
+              {item.features &&
+                item.features.map((features) => (
+                  <SideMenuSystemFeatures
+                    key={features._id}
+                    features={features}
+                  />
+                ))}
             </div>
           </ul>
         </li>

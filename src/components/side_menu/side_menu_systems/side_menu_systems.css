@@ -1,5 +1,5 @@
 .side_menu_systems {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* border-left: 5px solid green; */
 }
 .side_menu_systems-system li {
@@ -44,8 +44,11 @@
 .side_menu_systems-system-features-feature {
     margin-left: 40px;
     /* background-color: aqua; */
-    border-left: 2px solid #F2E8FA;
+    border-left: 2px solid var(--blue_04);
 }
+
+
+
 
 /* features expand status */
 .side_menu_systems-system-features.expand {
@@ -53,6 +56,9 @@
     height: auto;
     /* opacity: 1; */
 }
+
+
+
 
 
 /* collapse status */
