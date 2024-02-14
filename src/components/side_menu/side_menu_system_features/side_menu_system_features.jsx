@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./side_menu_system_features.css";
 import SideMenuSystemSubFeatures from "../side_menu_system_sub_features/side_menu_system_sub_features";
@@ -11,7 +12,7 @@ function SideMenuSystemFeatures({ features }) {
   return (
     <div className="side_menu_system_features">
       <li key={features._id}>
-        <a href="#" onClick={() => setExpand(!expand)}>
+        <Link to={features.url} onClick={() => setExpand(!expand)}>
           <div className="side_menu_system_features-details">
             <div className="side_menu_system_features-details-name">
               {features.name}
@@ -22,7 +23,7 @@ function SideMenuSystemFeatures({ features }) {
               ) : undefined}
             </div>
           </div>
-        </a>
+        </Link>
         <ul
           className={`side_menu_system_features-sub_features ${
             expand ? "expand" : undefined
