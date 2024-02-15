@@ -9,11 +9,14 @@ import { IoIosArrowUp } from "react-icons/io";
 function SideMenuSystemFeatures({ features }) {
   const [expand, setExpand] = useState(false);
 
+  const currentPath = window.location.pathname;
+  console.log(currentPath);
+
   return (
     <div className="side_menu_system_features">
       <li key={features._id}>
         <Link  to={features.url} onClick={() => setExpand(!expand)}>
-          <div className={`side_menu_system_features-details`} >
+          <div className={currentPath === features.url ?'side_menu_system_features-details-active': `side_menu_system_features-details`} >
             <div className="side_menu_system_features-details-name">
               {features.name}
             </div>

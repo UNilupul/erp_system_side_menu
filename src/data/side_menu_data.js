@@ -20,7 +20,7 @@ const sytemsList = [
             {
                 _id: 1.2,
                 name: "Account receivable ageing",
-                url: "",
+                url: "/power_bi/account-receivable-ageing",
                 active: false,
             },
             {
