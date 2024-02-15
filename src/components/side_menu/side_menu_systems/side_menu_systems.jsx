@@ -9,12 +9,13 @@ import SideMenuSystemFeatures from "../side_menu_system_features/side_menu_syste
 function SideMenuSystems({ item, onClick }) {
   const [expand, setExpand] = useState(false);
 
+
   return (
     <div className="side_menu_systems">
       <div className="side_menu_systems-system">
         <li onClick={onClick}>
-          <Link to={item.url} onClick={() => setExpand(!expand)}>
-            <div className="side_menu_systems-system-details">
+          <Link to={item.url} onClick={() => {setExpand(!expand)}}>
+            <div className={`side_menu_systems-system-details`} >
               <div className="side_menu_systems-system-details-nameIcon">
                 <div className="side_menu_systems-system-details-nameIcon-icon">
                   {item.icon}
@@ -40,6 +41,7 @@ function SideMenuSystems({ item, onClick }) {
                   <SideMenuSystemFeatures
                     key={features._id}
                     features={features}
+                    isActive={features.active}
                   />
                 ))}
             </div>

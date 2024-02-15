@@ -3,10 +3,14 @@
     /* border-left: 5px solid green; */
 }
 .side_menu_systems-system li {
-    list-style: none;
+    /* list-style: none; */
 }
 .side_menu_systems-system li a{
     text-decoration: none;
+    /* background-color: rgb(214, 63, 63); */ 
+}
+.side_menu_systems-system-Link {
+    /* background-color: aqua; */
 }
 .side_menu_systems-system-details {
     padding: 10px 30px;
@@ -16,6 +20,12 @@
     color: var(--inactiveColor);
     /* background-color: rgb(163, 163, 197); */
     /* border-left: 5px solid green; */
+}
+.side_menu_systems-system-details:hover, 
+.side_menu_systems-system-details.active {
+    background-color: var(--blue_04);
+    color: var(--blue_01);
+    border-left: 7px solid var(--blue_01);
 }
 .side_menu_systems-system-details-nameIcon {
     display: flex;

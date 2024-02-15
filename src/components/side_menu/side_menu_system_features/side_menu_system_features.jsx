@@ -12,8 +12,8 @@ function SideMenuSystemFeatures({ features }) {
   return (
     <div className="side_menu_system_features">
       <li key={features._id}>
-        <Link to={features.url} onClick={() => setExpand(!expand)}>
-          <div className="side_menu_system_features-details">
+        <Link  to={features.url} onClick={() => setExpand(!expand)}>
+          <div className={`side_menu_system_features-details`} >
             <div className="side_menu_system_features-details-name">
               {features.name}
             </div>
@@ -23,19 +23,22 @@ function SideMenuSystemFeatures({ features }) {
               ) : undefined}
             </div>
           </div>
-        </Link>
+        </Link >
         <ul
           className={`side_menu_system_features-sub_features ${
             expand ? "expand" : undefined
           }`}
         >
-          {features.subFeatures &&
-            features.subFeatures.map((subFeatures) => (
-              <SideMenuSystemSubFeatures
-                key={subFeatures._id}
-                subFeatures={subFeatures}
-              />
-            ))}
+          <div className="side_menu_system_features-sub_features-feature">
+            {features.subFeatures &&
+             features.subFeatures.map((subFeatures) => (
+                <SideMenuSystemSubFeatures
+                  key={subFeatures._id}
+                  subFeatures={subFeatures}
+                  
+                />
+              ))}
+          </div>
         </ul>
       </li>
     </div>

@@ -6,7 +6,7 @@ const sytemsList = [
     {
         _id: 1,
         name: "Power BI - Dashboards",
-        url: "/power_bi",
+        // url: "/",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: true,
@@ -15,13 +15,13 @@ const sytemsList = [
                 _id: 1.1,
                 name: "Cash flow forecast",
                 url: "/power_bi/cash_forecast",
-                active: false,
+                active: true,
             },
             {
                 _id: 1.2,
                 name: "Account receivable ageing",
                 url: "",
-                active: true,
+                active: false,
             },
             {
                 _id: 1.3,
@@ -40,7 +40,7 @@ const sytemsList = [
     {
         _id: 2,
         name: "Finace Management",
-        url: "/finance-management",
+        // url: "/finance-management",
         icon: <MdAttachMoney />,
         expandIcon: <IoIosArrowDown />,
         active: false,
@@ -49,7 +49,7 @@ const sytemsList = [
                 _id: 2.1,
                 name: "General ledger integration",
                 url: "",
-                active: true,
+                active: false,
             },
             {
                 _id: 2.2,
@@ -89,7 +89,7 @@ const sytemsList = [
     {
         _id: 3,
         name: "HRIS",
-        url: "",
+        // url: "",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: false,
@@ -97,7 +97,7 @@ const sytemsList = [
     {
         _id: 4,
         name: "Production Planning System",
-        url: "",
+        // url: "",
         icon: <RxPerson />,
         expandIcon: <IoIosArrowDown />,
         active: false,
