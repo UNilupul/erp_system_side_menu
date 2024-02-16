@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./main.css";
-import SideMenu from "../../components/side_menu/side_menu";
-import SystemRoutes from "../../components/routes/system_routes";
+import SideMenu from "../../side_menu/side_menu/side_menu";
+import SystemRoutes from "../../routes/system_routes";
 
 function Main() {
   return (

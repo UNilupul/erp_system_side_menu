@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 
 import "./side_menu.css";
 
-import Logo from "../../assets/erp_log.png";
-import ProfilePicture from "../../assets/user.jpg";
+import Logo from "../assets/erp_log.png";
+import ProfilePicture from "../assets/user.jpg";
 
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
-import SideMenuSystems from "./side_menu_systems/side_menu_systems";
-import SystemList from "../../data/side_menu_data";
+import SideMenuSystems from "../components/side_menu_systems/side_menu_systems";
+import SystemList from "../utils/side_menu_data/side_menu_data";
 
 function SideMenu() {
   const [collapse, setCollapse] = useState(false);
