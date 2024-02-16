@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./side_menu_systems.css";
-
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import SideMenuSystemFeatures from "../side_menu_system_features/side_menu_system_features";
+
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+
 
 function SideMenuSystems({ item, onClick }) {
   const [expand, setExpand] = useState(false);
@@ -14,7 +15,7 @@ function SideMenuSystems({ item, onClick }) {
     <div className="side_menu_systems">
       <div className="side_menu_systems-system">
         <li onClick={onClick}>
-          <Link to={item.url} onClick={() => {setExpand(!expand)}}>
+          <NavLink to={item.url} onClick={() => {setExpand(!expand)}}>
             <div className={`side_menu_systems-system-details`} >
               <div className="side_menu_systems-system-details-nameIcon">
                 <div className="side_menu_systems-system-details-nameIcon-icon">
@@ -25,10 +26,10 @@ function SideMenuSystems({ item, onClick }) {
                 </div>
               </div>
               <div className="side_menu_systems-system-details-arrow">
-                {expand ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                {expand ? <FiChevronUp /> : <FiChevronDown />}
               </div>
             </div>
-          </Link>
+          </NavLink>
 
           <ul
             className={`side_menu_systems-system-features ${
