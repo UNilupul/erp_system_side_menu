@@ -1,8 +1,8 @@
 import React from "react";
 
-function FinanceManagement({ reference }) {
+function FinanceManagement() {
   return (
-    <section id="finance_management" className="finance_management active" ref={reference}>
+    <section id="finance_management" className="finance_management active" >
       <h1>Finanace Management</h1>
     </section>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./side_menu_system_features.css";
 import SideMenuSystemSubFeatures from "../side_menu_system_sub_features/side_menu_system_sub_features";
@@ -8,11 +9,14 @@ import { IoIosArrowUp } from "react-icons/io";
 function SideMenuSystemFeatures({ features }) {
   const [expand, setExpand] = useState(false);
 
+  const currentPath = window.location.pathname;
+  console.log(currentPath);
+
   return (
     <div className="side_menu_system_features">
       <li key={features._id}>
-        <a href="#" onClick={() => setExpand(!expand)}>
-          <div className="side_menu_system_features-details">
+        <Link  to={features.url} onClick={() => setExpand(!expand)}>
+          <div className={currentPath === features.url ?'side_menu_system_features-details-active': `side_menu_system_features-details`} >
             <div className="side_menu_system_features-details-name">
               {features.name}
             </div>
@@ -22,19 +26,22 @@ function SideMenuSystemFeatures({ features }) {
               ) : undefined}
             </div>
           </div>
-        </a>
+        </Link >
         <ul
           className={`side_menu_system_features-sub_features ${
             expand ? "expand" : undefined
           }`}
         >
-          {features.subFeatures &&
-            features.subFeatures.map((subFeatures) => (
-              <SideMenuSystemSubFeatures
-                key={subFeatures._id}
-                subFeatures={subFeatures}
-              />
-            ))}
+          <div className="side_menu_system_features-sub_features-feature">
+            {features.subFeatures &&
+             features.subFeatures.map((subFeatures) => (
+                <SideMenuSystemSubFeatures
+                  key={subFeatures._id}
+                  subFeatures={subFeatures}
+                  
+                />
+              ))}
+          </div>
         </ul>
       </li>
     </div>
