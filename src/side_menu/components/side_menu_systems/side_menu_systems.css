@@ -72,6 +72,9 @@
 
 
 /* collapse status */
+.side_menu.collapse .side_menu_systems-system-details {
+    width: 83px;
+}
 .side_menu.collapse .side_menu_systems-system-details-nameIcon-name {
     display: none;
 }
