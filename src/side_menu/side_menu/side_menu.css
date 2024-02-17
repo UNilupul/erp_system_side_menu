@@ -79,18 +79,24 @@
 .side_menu.collapse .side_menu-user_details {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0;
+    /* align-items: start;
+    justify-content: center; */
+    width: 83px;
+    margin: 10px 0 0;
+    padding: 0;
+    gap: 60px;
 }
 .side_menu.collapse .side_menu-user_details-profile_picture img{
     width: 49px;
     height: 49px;
+    margin: -10px;
 }
 .side_menu.collapse .side_menu-user_details-details {
     opacity: 0;
     width: 0;
     height: 0;
     overflow: hidden;
-    /* display: none; */
+    display: none;
     margin: 30px;
 }
 .side_menu.collapse .side_menu-systems {
