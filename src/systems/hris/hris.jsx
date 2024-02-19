@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function HRIS() {
   return (
-    <section>
+    <section className="hris active">
       <h1>HRIS</h1>
     </section>
-  )
+  );
 }
 
 export default HRIS;
