@@ -15,7 +15,7 @@ function SideMenuSystems({ item, onClick }) {
     <div className="side_menu_systems">
       <div className="side_menu_systems-system">
         <li onClick={onClick}>
-          <NavLink  to={item.url} onClick={() => {setExpand(!expand)}} >
+          <NavLink className={({isActive}) => {return isActive ? "side_menu_systems-system-details-active" : ""}} to={item.url} onClick={() => {setExpand(!expand)}} >
             <div className={`side_menu_systems-system-details`} >
               <div className="side_menu_systems-system-details-nameIcon">
                 <div className="side_menu_systems-system-details-nameIcon-icon">
