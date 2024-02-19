@@ -9,11 +9,8 @@
     text-decoration: none;
     /* background-color: rgb(214, 63, 63); */ 
 }
-.side_menu_systems-system-Link {
-    /* background-color: aqua; */
-}
 .side_menu_systems-system-details {
-    width: 404px;
+    width: 410px;
     padding: 10px 30px;
     display: flex;
     align-items: center;
@@ -22,8 +19,8 @@
     /* background-color: rgb(163, 163, 197); */
     /* border-left: 5px solid green; */
 }
-.side_menu_systems-system-details:hover, 
-.side_menu_systems-system-details.active {
+.side_menu_systems-system-details:hover {
+    width: 421px;
     background-color: var(--blue_04);
     color: var(--blue_01);
     border-left: 7px solid var(--blue_01);
@@ -61,6 +58,11 @@
 .side_menu_systems-system-details-arrow {
     display: flex;
     align-items: center;
+}
+.side_menu_systems-system-details-active .side_menu_systems-system-details-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--blue_01);
 }
 .side_menu_systems-system-features {
     /* width: 364px; */
