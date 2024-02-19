@@ -11,8 +11,9 @@ function SideMenuSystemSubFeatures({ subFeatures }) {
   return (
     <div className="side_menu_system_sub_features">
       <li>
-        <NavLink to={subFeatures.url}>
-          <div className={`side_menu_system_sub_features-details ${currentPath === subFeatures.url ? "active" : undefined}`}>
+        <NavLink className={({isActive}) => {return isActive ? "side_menu_system_sub_features-details-active" : ""}} to={subFeatures.url}>
+          {/* <div className={`side_menu_system_sub_features-details ${currentPath === subFeatures.url ? "active" : undefined}`}> */}
+          <div className={`side_menu_system_sub_features-details`}>
             {subFeatures.name}
           </div>
         </NavLink>
