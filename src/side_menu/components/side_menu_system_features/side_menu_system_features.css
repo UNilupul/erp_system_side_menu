@@ -7,6 +7,7 @@
     list-style: none;
 }
 .side_menu_system_features-details {
+    width: 370px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,14 +22,17 @@
     border-left: 7px solid var(--blue_01);
 }
 .side_menu_system_features-details-active {
+    /* width: auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--inactiveColor);
-    padding: 7px 30px 7px 20px; 
+    /* width: 300px; */
+    /* color: var(--inactiveColor); */
+    /* padding: 7px 30px 7px 20px;  */
 
     background-color: var(--blue_04);
     color: var(--blue_01);
+    /* color: green; */
     border-left: 7px solid var(--blue_01);
 }
 .side_menu_system_features-details-name {

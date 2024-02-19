@@ -6,7 +6,7 @@
 }
 .side_menu_system_sub_features-details {
     padding: 7px 30px 7px 20px;
-    margin: 5px 0;
+    /* margin: 5px 0 ; */
     color: var(--inactiveColor);
     /* background-color: aquamarine; */
 }
@@ -15,4 +15,15 @@
     background-color: var(--blue_04);
     color: var(--blue_01);
     border-left: 7px solid var(--blue_01);
+}
+.side_menu_system_sub_features-details-active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue_04);
+    color: var(--blue_01);
+    border-left: 7px solid var(--blue_01);
+    padding: 0;
+    margin: 5px 0 ;
+    /* width: auto; */
 }

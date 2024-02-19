@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./side_menu_system_features.css";
 import SideMenuSystemSubFeatures from "../side_menu_system_sub_features/side_menu_system_sub_features";
@@ -11,13 +11,15 @@ function SideMenuSystemFeatures({ features }) {
 
   const currentPath = window.location.pathname;
   console.log(currentPath);
+  
 
   return (
     <div className="side_menu_system_features">
       <li key={features._id}>
-        <NavLink /* className={(isActive) => isActive ? "active" : ""}*/ to={features.url} onClick={() => setExpand(!expand)}>
+        <NavLink className={({isActive}) => {return isActive ? "side_menu_system_features-details-active" : ""}} to={features.url} onClick={() => setExpand(!expand)}>
           {/* <div className={currentPath === features.url ?'side_menu_system_features-details-active' : `side_menu_system_features-details`} > */}
-          <div className={`side_menu_system_features-details ${currentPath === features.url ? "active": undefined}`} >
+          {/* <div className={`side_menu_system_features-details ${currentPath === features.url ? "active": ""}`} > */}
+          <div className={`side_menu_system_features-details`} >
             <div className="side_menu_system_features-details-name">
               {features.name}
             </div>
@@ -27,6 +29,7 @@ function SideMenuSystemFeatures({ features }) {
               ) : undefined}
             </div>
           </div>
+          {/* Home */}
         </NavLink >
         <ul
           className={`side_menu_system_features-sub_features ${
