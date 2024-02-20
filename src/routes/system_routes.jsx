@@ -54,6 +54,7 @@ function SystemRoutes() {
 
 
       {/* Power BI  */}
+      <Route path="/power_bi" element={<PowerBI />} />
       <Route path="/power_bi/cash_forecast" element={<CashFlowForecast />} />
       <Route path="/power_bi/account_receivable_ageing" element={<AccountReceivableAgeing />} />
       <Route path="/power_bi/ageing_vs_revenue_analysis" element={<AgeingVsRevenueAnalysis />} />

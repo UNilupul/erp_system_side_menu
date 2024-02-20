@@ -37,15 +37,15 @@
 .side_menu_system_features-details-name {
     /* font-size: 14px; */
 }
-/* .side_menu_system_features-details-active .side_menu_system_features-details-name {
+.side_menu_system_features-details-active .side_menu_system_features-details-name {
     color: var(--blue_01);
-} */
+}
 .side_menu_system_features-details-arrow {
     display: flex;
 }
-/* .side_menu_system_features-details-active .side_menu_system_features-details-arrow {
+.side_menu_system_features-details-active .side_menu_system_features-details-arrow {
     color: var(--blue_01);
-} */
+}
 .side_menu_system_features-sub_features {
     /* background-color: aqua; */
     display: none;
