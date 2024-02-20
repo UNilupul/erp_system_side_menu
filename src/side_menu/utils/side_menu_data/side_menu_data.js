@@ -4,7 +4,7 @@ const sytemsList = [
     {
         _id: "1",
         name: "Power BI - Dashboards",
-        url: "/",
+        url: "/power_bi",
         icon: <FiUser />,
         expandIcon: <FiChevronDown />,
         // active: true,
