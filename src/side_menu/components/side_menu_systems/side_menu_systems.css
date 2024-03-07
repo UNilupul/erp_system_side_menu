@@ -12,7 +12,8 @@
 .side_menu_systems-system-details {
     width: 410px;
     padding: 10px 30px;
-    display: flex;
+    /* display: flex; */
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     color: var(--inactiveColor);
@@ -27,7 +28,8 @@
 }
 .side_menu_systems-system-details-active {
     padding: 0;
-    display: flex;
+    /* display: flex; */
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
 

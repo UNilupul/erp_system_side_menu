@@ -7,10 +7,13 @@ import SystemRoutes from "../../routes/system_routes";
 function Main() {
   return (
     <main>
-      <SideMenu />
-      <div className="main-display">
-        <SystemRoutes />
+      <div className="main-side_menu">
+        <SideMenu />
       </div>
+      {/* <div className="main-display">
+        <SystemRoutes />
+      </div> */}
+      <SystemRoutes />
     </main>
   );
 }
