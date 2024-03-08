@@ -25,14 +25,14 @@ function SideMenu() {
 
 
   useEffect(() => {
-    if (collapse) {
+    if (!expand) {
       document
         .querySelectorAll(".side_menu_systems-system-features")
         .forEach((el) => {
           el.classList.remove("expand");
         });
     }
-  }, [collapse]);
+  }, [expand]);
 
   return (
     <div

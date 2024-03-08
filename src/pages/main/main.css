@@ -9,7 +9,7 @@ main {
     gap: 0px;
     transition: 0.5s;
     margin-left: 6%;
-    width: 100%;
+    /* width: 100%; */
 }
 .main-side_menu {
     z-index: 1;
