@@ -10,19 +10,21 @@ main {
     transition: 0.5s;
     margin-left: 6%;
     /* width: 100%; */
+    background-color: green;
 }
 .main-side_menu {
     z-index: 1;
     position: fixed;
     left: 0%;
 }
-.main-display {
+/* .main-display {
     width: 100vw;
     height: 100%;
     position: absolute;
     margin-left: 5%;
     overflow: auto;
-}
+    background-color: green;
+} */
 /* section {
     overflow: hidden;
     position: absolute;
